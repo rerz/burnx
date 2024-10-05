@@ -1,0 +1,18 @@
+[package]
+name = "burnx"
+version = "0.1.0"
+edition = "2021"
+
+[workspace]
+members = [
+    ".",
+    "crates/*"
+]
+
+[workspace.dependencies]
+burn = "0.14.0"
+rand = "0.8.5"
+
+[dependencies]
+burnx-sequence = { path = "crates/burnx-sequence" }
+burn = { workspace = true }
